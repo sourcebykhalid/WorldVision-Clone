@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800&family=Skranji:wght@700&display=swap");
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Lato", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: #fcfeff;
+  color: black;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.dots {
+  display: flex;
+  color: grey;
+  border: 0.5px solid rgb(187, 186, 186);
+  margin-left: 0;
+}
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  padding: 20px;
+}
+.nav-items li {
+  margin-right: 5px;
+}
+.nav-items a {
+  color: #777;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none; /* Added to remove underlines */
+}
+
+.nav-items a:hover {
+  color: rgb(247, 113, 64);
+}
+
+.fa-solid {
+  color: #777;
+  font-size: 1.6rem;
+  margin-right: 14px;
+}
+
+#dropdown-items {
+  display: none;
+}
+
+#menu-dropdown:hover #dropdown-items {
+  display: block;
+  display: flex;
+  margin-top: 5px;
+  border: 1px solid grey;
+  flex-direction: column;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 5rem;
+  height: 8rem;
+  background-color: #eae7e7;
+}
+#dropdown-items2 {
+  display: none;
+}
+
+#menu-dropdown2:hover #dropdown-items2 {
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 58px;
+  border: 1px solid grey;
+  flex-direction: column;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 9rem;
+  height: 10rem;
+  background-color: #eae7e7;
+}
+
+/* Adjust padding for dropdown items */
+
+/* Container Styles */
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 12.5s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url(./images/worldvision.jpg);
+  animation-delay: 0s;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url(./images/image2.jpg);
+  animation-delay: -2.5s;
+}
+
+.slider .slide:nth-child(3) {
+  background-image: url(./images/image3.jpg);
+  animation-delay: -5s;
+}
+
+@keyframes slider {
+  0%,
+  16%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  96% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+.slider h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  color: #eae7e7;
+}
+.slider button {
+  padding: 10px;
+  font-size: 2rem;
+  background-color: chocolate;
+  color: #f5f2f2;
+  border-radius: 5px;
+  border: none;
+  margin-left: 48px;
+}
+.dropdown-menu:hover {
+  display: block;
+  height: 4rem;
+}
+/* Navigation Button Styles */
+
+/* Buttons Styles */
+.buttons {
+  background-color: rgb(247, 113, 64);
+  padding: 8px;
+  border-radius: 5px;
+  /* margin-right: 18px; */
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  color: aliceblue;
+  cursor: pointer; /* Added cursor style here */
+}
+
+.buttons button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: first baseline;
+  align-items: flex-start;
+  height: 21rem;
+  background-color: #414141;
+  color: #e3e3e3;
+  padding: 18px 25px;
+}
+
+.sitemap {
+  margin-top: 35px;
+}
+.footer a {
+  text-decoration: none;
+  color: #e3e3e3;
+}
+
+.footer-support {
+  margin-left: 125px;
+  padding-top: 40px;
+}
+
+.flex li {
+  padding: 7px;
+}
